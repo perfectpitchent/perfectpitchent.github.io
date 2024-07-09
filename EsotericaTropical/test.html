@@ -22,10 +22,17 @@
         // Load the content when the page loads
         document.addEventListener('DOMContentLoaded', function () {
             loadHTML('external.html', 'content');
+            loadHTML('note.html', 'note');
         });
     </script>
+ <title>
+  Test
+ </title>
 </head>
 <body>
+    <div id="note">
+        <!-- External HTML will be loaded here -->
+    </div>
     <div id="content">
         <!-- External HTML will be loaded here -->
     </div>
