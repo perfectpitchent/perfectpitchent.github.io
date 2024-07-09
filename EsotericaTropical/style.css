@@ -1,0 +1,35 @@
+html {font-size: 16px;}
+@media (max-width: 1200px) {
+            html {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            html {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            html {
+                font-size: 12px;
+            }
+        }
+body {font-family: Arial, sans-serif; padding: 0; background-color: white; margin:0;}
+table {background-color:lightgray; padding: 12px; margin:0;}
+td {padding: 8px; background-color: white; padding-top:0px;}
+tr {align: center; padding-top:0px;}
+h1 {padding: 0px; text-align:center; font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+p {text-align:justify;}
+.center-container {text-align: center;}
+.center-container img {display:inline-block; width:95%; height: auto; max-width: 100%;}
+.center-italic {text-align: center; font-style: italic; margin-left: 2rem; margin-right: 2rem;}
+.note {padding: 8px;}

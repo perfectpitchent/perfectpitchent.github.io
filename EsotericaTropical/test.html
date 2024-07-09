@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Esotérica Tropical
+		</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+        function loadHTML(url, elementId) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById(elementId).innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+
+        // Load the content when the page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            loadHTML('external.html', 'content');
+        });
+    </script>
+</head>
+<body>
+    <div id="content">
+        <!-- External HTML will be loaded here -->
+    </div>
+</body>
+</html>
