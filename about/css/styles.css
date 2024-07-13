@@ -38,12 +38,13 @@ body {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
+    /* 
     background-image: url('https://perfectpitchent.github.io/about/img/');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-attachment: fixed; 
-
+    */
 }
 p {
     margin: 3rem;
@@ -80,7 +81,7 @@ h3 {
     height: auto;
     /* left: 5px;
     top: 5px; */
-    visibility: visible;
+    visibility: hidden;
     z-index: 1000;
     display: block;
     margin-left: auto;
