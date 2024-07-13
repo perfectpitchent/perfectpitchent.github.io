@@ -71,7 +71,7 @@ h3 {
     top: 5px; */
     background-image: url('https://perfectpitchent.github.io/about/img/logos/Logo2800x2800.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed; 
     visibility: visible;
