@@ -12,10 +12,6 @@ body {
 }
 body {
     background-color: transparent;
-    /* background: -webkit-linear-gradient(-90deg, rgb(67, 67, 67) 4%, rgb(255, 255, 255) 54%);
-    background: -moz-linear-gradient(-90deg, rgb(67, 67, 67) 4%, rgb(255, 255, 255) 54%);
-    background: linear-gradient(180deg, rgb(67, 67, 67) 4%, rgb(255, 255, 255) 54%); */
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     perspective: 1400px;
