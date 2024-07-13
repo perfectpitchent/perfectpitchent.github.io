@@ -22,22 +22,6 @@ html {font-size: 16px;}
                 font-size: 12px;
             }
         }
-p {
-    margin: 3rem;
-    margin-top: 1rem;
-    text-align: justify;
-}
-h1 {
-    margin: 0px;
-    padding-left: 3rem;
-    color: #DF0707;
-    text-align: left;
-}
-h2 {
-    margin: 0px;
-}
-h3 {
-    margin: 0px;
 }body {
     width: 100%;
     height: 100%;
@@ -60,7 +44,24 @@ body {
     background-position: center;
     background-attachment: fixed; 
 
-}.gradient {
+}
+p {
+    margin: 3rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+h1 {
+    margin: 0px;
+    padding-left: 3rem;
+    color: #DF0707;
+    text-align: left;
+}
+h2 {
+    margin: 0px;
+}
+h3 {
+    margin: 0px;
+.gradient {
     width: 100%;
     height: 100%;
     background: -webkit-linear-gradient(-90deg, rgb(67, 67, 67) 4%, rgb(255, 255, 255) 54%);
