@@ -24,14 +24,7 @@ body {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
-    /* 
-    background-image: url('https://perfectpitchent.github.io/about/img/');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed; 
-    */
-}
+    }
 p {
     margin: 3rem;
     margin-top: 1rem;
@@ -68,12 +61,7 @@ h3 {
     width: 13rem;
     height: auto;
     /* left: 5px;
-    top: 5px; 
-    background-image: url('https://perfectpitchent.github.io/about/img/logos/Logo2800x2800.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
+    top: 5px; */
     visibility: visible;
     z-index: 1000;
     display: block;
