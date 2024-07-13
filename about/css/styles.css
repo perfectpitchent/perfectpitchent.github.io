@@ -11,8 +11,8 @@ body {
     padding: 0px;
 }
 body {
-    /* background-color: transparent;
-    background: -webkit-linear-gradient(-90deg, rgb(67, 67, 67) 4%, rgb(255, 255, 255) 54%);
+    background-color: transparent;
+    /* background: -webkit-linear-gradient(-90deg, rgb(67, 67, 67) 4%, rgb(255, 255, 255) 54%);
     background: -moz-linear-gradient(-90deg, rgb(67, 67, 67) 4%, rgb(255, 255, 255) 54%);
     background: linear-gradient(180deg, rgb(67, 67, 67) 4%, rgb(255, 255, 255) 54%); */
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -69,6 +69,11 @@ h3 {
     height: auto;
     /* left: 5px;
     top: 5px; */
+    background-image: url('https://perfectpitchent.github.io/about/img/logos/Logo2800x2800.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed; 
     visibility: visible;
     z-index: 1000;
     display: block;
