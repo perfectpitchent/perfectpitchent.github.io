@@ -1,0 +1,93 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+main {
+  padding-top: 60px; /* Height of header */
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
+    padding: 10px; /* Add padding to the menu */
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu a {
+    padding: 15px;
+    display: block; /* Ensure the links take the full width of the menu */
+  }
+}
