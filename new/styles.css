@@ -23,6 +23,10 @@ header {
   height: 40px;
 }
 
+.ppe {
+  text-align: center;
+}
+
 .menu-icon {
   font-size: 30px;
   cursor: pointer;
