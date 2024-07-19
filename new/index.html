@@ -18,7 +18,7 @@
 
         // Load the content when the page loads
         document.addEventListener('DOMContentLoaded', function () {
-            loadHTML('https://www.perfectpitchent.com/new/aboutppe/index.html', 'section1');
+            loadHTML('https://www.perfectpitchent.com/new/aboutppe/index.html', 'section2');
         });
     </script>
   <link rel="stylesheet" href="styles.css">
@@ -40,11 +40,13 @@
       </ul>
     </nav>
   </header>
-
   <main>
-    <section id="section1"><div id="about"></div>
-      <h1>Section 1</h1>
-      <p>Content for section 1...</p>
+    <section id="video-section">
+      <!-- p>Content for section 1...</p -->
+      <video controls width="600">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
     <section id="section2">
       <h1>Section 2</h1>
@@ -54,7 +56,7 @@
       <h1>Section 3</h1>
       <p>Content for section 3...</p>
     </section>
-    <section id="section4">
+    <section id="about">
       <h1>Section 4</h1>
       <p>Content for section 4...</p>
     </section>

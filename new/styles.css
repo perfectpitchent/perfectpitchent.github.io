@@ -60,7 +60,11 @@ section {
   border-bottom: 1px solid #ddd;
   text-align: justify;
 }
-
+#video-section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
