@@ -45,21 +45,11 @@ function shuffleArray(array) {
 // Scroll function to make it scroll at intervals
 function autoScroll() {
     const container = document.getElementById('dataContainer');
+    
+    // Set the scrolling speed (higher value = slower scroll)
+    const scrollSpeed = 50;
+    
     let scrollInterval = setInterval(() => {
-        container.scrollTop += 1;
-        if (container.scrollTop + container.offsetHeight >= container.scrollHeight) {
-            clearInterval(scrollInterval);
-            setTimeout(() => container.scrollTop = 0, 1000); // Reset scroll after reaching the bottom
-        }
-    }, 20); // Adjust speed here
-}
-
-// Fetch and display data
-fetchCSV()
-    .then(csvData => {
-        let data = parseCSV(csvData);
-        data = shuffleArray(data); // Randomize the data
-        displayData(data);
-        autoScroll(); // Start auto-scrolling
-    })
-    .catch(error => console.error('Error fetching the CSV:', error));
+        // Increment the scrollTop position to scroll down
+        container.scrollTop += 1;}
+    )}
