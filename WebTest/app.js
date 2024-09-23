@@ -1,5 +1,5 @@
 // Assuming your CSV file is in the same directory
-const csvFile = 'data.csv';
+const csvFile = 'https://www.perfectpitchent.com/WebTest/data.csv';
 
 // Function to fetch CSV file
 async function fetchCSV() {
