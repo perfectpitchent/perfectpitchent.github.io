@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Scrolling</title>
+    <style>
+        .scrolling-container {
+            width: 100%; /* Full width */
+            height: 50px; /* Height for the text container */
+            overflow: hidden; /* Hide the overflow */
+            position: relative; /* Relative positioning for child elements */
+        }
+
+        .scrolling-text {
+            position: absolute; /* Absolute positioning to move */
+            white-space: nowrap; /* Prevent text wrapping */
+            font-size: 24px; /* Adjust font size */
+            animation: scroll 7s linear infinite; /* Scroll effect over 7 seconds */
+        }
+
+        @keyframes scroll {
+            0% {
+                left: -100%; /* Start from outside the left edge */
+            }
+            100% {
+                left: 100%; /* Move to outside the right edge */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrolling-container">
+        <div class="scrolling-text">Hello World</div>
+    </div>
+
+    <script>
+        // No additional JavaScript needed for this simple scrolling effect!
+    </script>
+</body>
+</html>
