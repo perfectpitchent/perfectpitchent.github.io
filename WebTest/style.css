@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    padding: 10px;
+}
+
+.data-container {
+    height: 500px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #fff;
+}
+
+/* Mobile-first */
+h1 {
+    font-size: 24px;
+}
+
+.data-container div {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Responsive styling for larger devices */
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+    .data-container div {
+        font-size: 22px;
+    }
+}
