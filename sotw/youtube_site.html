@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spirit of the World</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: #090d1a;
+      color: #fff;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 1.2rem 2rem;
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+    }
+
+    .bird-icon { font-size: 1.5rem; }
+
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      background: linear-gradient(90deg, #7dd3fc, #a78bfa, #f0abfc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .live-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #f87171;
+      letter-spacing: 0.08em;
+    }
+
+    .live-dot {
+      width: 7px; height: 7px;
+      background: #ef4444;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.5); }
+    }
+
+    .hero {
+      width: 100%;
+      max-width: 920px;
+      padding: 2.8rem 1.5rem 1rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.9rem;
+      background: linear-gradient(135deg, #fff 50%, #7dd3fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero .desc {
+      color: rgba(255,255,255,0.55);
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 0.5rem;
+      line-height: 1.6;
+    }
+
+    .location {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: rgba(125, 211, 252, 0.7);
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .glow-ring {
+      position: absolute;
+      inset: -3px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #7dd3fc, #a78bfa, #34d399);
+      z-index: 0;
+      filter: blur(8px);
+      opacity: 0.5;
+    }
+
+    .video-wrapper {
+      position: relative;
+      z-index: 1;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .features {
+      margin-top: 1.8rem;
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      padding: 0.45rem 1.1rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .skyline-bar {
+      width: 100%;
+      max-width: 920px;
+      margin: 2.5rem auto 0;
+      padding: 0 1.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .info-card {
+      flex: 1;
+      min-width: 180px;
+      max-width: 260px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      text-align: left;
+    }
+
+    .info-card .label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 0.35rem;
+    }
+
+    .info-card .value {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 2.5rem 1rem 1.5rem;
+      text-align: center;
+      color: rgba(255,255,255,0.18);
+      font-size: 0.78rem;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: rgba(125, 211, 252, 0.4);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="bird-icon">🕊️</span>
+    <div class="logo">Spirit of the World</div>
+    <div class="live-badge"><div class="live-dot"></div> LIVE</div>
+  </header>
+
+  <section class="hero">
+    <h1>Birds in the City</h1>
+    <p class="desc">
+      Live feeder cam in Downtown Los Angeles — with sound! Watch hummingbirds and more visit up close,
+      while the DTLA skyline and real-time weather unfold in the background.
+    </p>
+    <div class="location">📍 Downtown Los Angeles, CA</div>
+
+    <div class="video-container">
+      <div class="glow-ring"></div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/AsVnkrqj-T8?si=0-PKO7ZvN2ERROQl"
+          title="Birds in the City - Live feeder in DTLA"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="features">
+      <span class="badge">🐦 Live Bird Feeder</span>
+      <span class="badge">🌆 DTLA Skyline View</span>
+      <span class="badge">🌤️ Real-Time Weather</span>
+      <span class="badge">🔊 Live Sound</span>
+      <span class="badge">🦜 Hummingbirds & More</span>
+    </div>
+  </section>
+
+  <div class="skyline-bar">
+    <div class="info-card">
+      <div class="label">Location</div>
+      <div class="value">Downtown Los Angeles, CA</div>
+    </div>
+    <div class="info-card">
+      <div class="label">Stream Type</div>
+      <div class="value">24/7 Live Feed with Audio</div>
+    </div>
+    <div class="info-card">
+      <div class="label">What to Watch For</div>
+      <div class="value">Hummingbirds, songbirds & city wildlife</div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Spirit of the World &mdash; All rights reserved.<br>
+    Bringing nature and the city together, one bird at a time. 🕊️
+  </footer>
+
+</body>
+</html>
